@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ==========================================================================\
+|
+|   To learn how to make your own language parser, please check the following
+|   link:
+|       https://npp-user-manual.org/docs/function-list/
+|
+\=========================================================================== -->
+<NotepadPlus>
+	<functionList>
+		<!-- ========================================================== [ Visual Foxpro ] -->
+		
+		<parser 
+		  id="visualfoxpro.xml" 
+		  displayName="Vfp"  
+		  commentExpr="(?m:((?i:&amp;&amp;)([\t ].*?)?$)|((?i:*)([\t ].*?)?$))"
+		> 
+			<classRange
+				mainExpr="(?s:(?i:DEFINE CLASS).*?(?i:ENDDEFINE))"
+				displayMode="node"
+			>
+				<className>
+					<nameExpr expr="(?i:CLASS)[\t ]+(?:[A-Za-z_][\w]*\b)(?:.*?[\r\n])" />
+					<nameExpr expr="[\t ]+(?:[A-Za-z_][\w]*\b)" />
+					<nameExpr expr="[A-Za-z_][\w]*" />
+				</className>
+				<function
+					  mainExpr="(?m:^[\t ]*(?i:(?:(?:PROTECTED|HIDDEN)[\t ]+)?(?:STATIC[\t ]+)?(?:PROCEDURE|PROC|FUNCTION|FUNC)).*?(?:\(|$))"
+				>
+					<functionName>
+					  <funcNameExpr expr="(?i:(?:(?:PROTECTED|HIDDEN)[\t ]+)?(?:STATIC[\t ]+)?(?:PROCEDURE|PROC|FUNCTION|FUNC)).*?(?:\(|$)"/>
+					  <funcNameExpr expr="(?i:(?:PROCEDURE|PROC|FUNCTION|FUNC)).*?(?:\(|$)"/>
+					  <funcNameExpr expr="[A-Za-z_][\w]*(?=[\t ]*(?i:\(|$))"/>
+					</functionName>
+				 </function>
+			</classRange>
+
+			<function
+				  mainExpr="(?m:^[\t ]*(?i:(?:(?:PROTECTED|HIDDEN)[\t ]+)?(?:STATIC[\t ]+)?(?:PROCEDURE|PROC|FUNCTION|FUNC)).*?(?:\(|$))"
+			>
+				<functionName>
+				  <nameExpr expr="(?i:(?:(?:PROTECTED|HIDDEN)[\t ]+)?(?:STATIC[\t ]+)?(?:PROCEDURE|PROC|FUNCTION|FUNC)).*?(?:\(|$)"/>
+				  <nameExpr expr="(?i:(?:PROCEDURE|PROC|FUNCTION|FUNC)).*?(?:\(|$)"/>
+				  <nameExpr expr="[A-Za-z_][\w]*(?=[\t ]*(?i:\(|$))"/>
+				</functionName>
+			</function>
+
+			<!-- Works also for functions only, but generat an XML-Parsing error if you save the XML
+				<function mainExpr="(?i)(?:(?<=^function)|(?<=^procedure))\s+\K\w+"/-->
+		</parser>
+	</functionList>
+</NotepadPlus>
