@@ -19,8 +19,8 @@
             <Keywords name="Folders in code1, middle"></Keywords>
             <Keywords name="Folders in code1, close">ENDFUNC ENDPROC</Keywords>
             <Keywords name="Folders in code2, open">IF TEXT FOR SCAN TRY &quot;DO CASE&quot; &quot;DO WHILE&quot; &quot;DEFINE CLASS&quot; #IF #IFDEF #IFNDEF</Keywords>
-            <Keywords name="Folders in code2, middle">ELSE [00 CATCH 01 02 FINALLY 02]</Keywords>
-            <Keywords name="Folders in code2, close">ENDIF ENDTRY ENDTEXT ENDFOR NEXT ENDSCAN ENDCASE ENDDO ENDDEFINE #ENDIF #ENDIF #ENDIF</Keywords>
+            <Keywords name="Folders in code2, middle"></Keywords>
+            <Keywords name="Folders in code2, close">ENDIF ENDTEXT ENDFOR ENDSCAN ENDTRY ENDCASE ENDDO ENDDEFINE #ENDIF #ENDIF #ENDIF</Keywords>
             <Keywords name="Folders in comment, open"></Keywords>
             <Keywords name="Folders in comment, middle"></Keywords>
             <Keywords name="Folders in comment, close"></Keywords>
@@ -36,7 +36,7 @@
         </KeywordLists>
         <Styles>
             <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" fontName="no" fontStyle="0" nesting="0" />
-            <WordsStyle name="COMMENTS" fgColor="008000" bgColor="FFFFFF" fontName="&#xC130;&#x039B;" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="008000" bgColor="FFFFFF" fontName="&#xC130;&#x039B;oxpro-&#x0008;" fontStyle="0" nesting="0" />
             <WordsStyle name="LINE COMMENTS" fgColor="008000" bgColor="FFFFFF" fontName="2" fontStyle="2" nesting="0" />
             <WordsStyle name="NUMBERS" fgColor="000000" bgColor="FFFFFF" fontName="aligned" fontStyle="1" nesting="0" />
             <WordsStyle name="KEYWORDS1" fgColor="0000FF" bgColor="FFFFFF" fontName="show" fontStyle="0" nesting="0" />
@@ -51,10 +51,10 @@
             <WordsStyle name="FOLDER IN CODE1" fgColor="0000FF" bgColor="FFFFFF" fontName="200" fontStyle="1" nesting="0" />
             <WordsStyle name="FOLDER IN CODE2" fgColor="0000FF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
             <WordsStyle name="FOLDER IN COMMENT" fgColor="008000" bgColor="FFFFFF" fontName="3" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS1" fgColor="000000" bgColor="FFFFFF" fontName="&#x3678;&#x0D31;" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS2" fgColor="000000" bgColor="FFFFFF" fontName="&#x3640;&#x0D31;" fontStyle="2" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="000000" bgColor="FFFFFF" fontName="&#x3678;&#x0D31;rdsSty&#x0010;" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS2" fgColor="000000" bgColor="FFFFFF" fontName="&#x3640;&#x0D31;Color=&#x0010;" fontStyle="2" nesting="0" />
             <WordsStyle name="DELIMITERS3" fgColor="0080FF" bgColor="FFFFFF" fontName="wwip" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontName="&#x3528;&#x0D31;" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontName="&#x3528;&#x0D31; name=&#x0012;" fontStyle="0" nesting="0" />
             <WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
             <WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
             <WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontName="0" fontStyle="0" nesting="0" />
