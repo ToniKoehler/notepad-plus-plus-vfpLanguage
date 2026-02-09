@@ -14,10 +14,13 @@ Description: display the classes and functions/procedures in Function List panel
 * to use the Function List panel with VFP you must copy the vfp.xml and overrideMap.xml in your notepad++ directory on your userprofile.<br>Path: c:\users\username\appdata\roaming\notepad++\functionList\*.xml<br>
 If the folder "functionList" not exists -> create it.
 
+## Functionality
+The vfp.xml will read the .prg file with regex to display Functions, Procedures and Classes. Every class has a anchor element on top with the name of class itself. That's a hack to display empty classes and to display the class type and source file in case of subclassing.
+
 ## Sample
 
 ```foxpro
-Define Class kaVfpRocksCst as Custom
+Define Class kaVfpRocksCst as Custom of "C:\Dev\masterLibrary.prg"
 
 	procedure DoSomeProc
 		*!* BlaBla
@@ -39,7 +42,12 @@ Define Class kaVfpRocksFrm as Form
 		=Messagebox("Hello")
 	endfunc
 
-ENDDEFINE
+ENDDEFINE 
+
+Define Class kaVfpRocksCstSub as "kaVfpRocksCst"
+
+
+ENDDEFINE 
 ```
 
 ![function list panel](sample.png)
