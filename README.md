@@ -38,7 +38,7 @@ Define Class kaVfpRocksFrm as Form
 		*!* BlaBla
 	endproc
 
-	Function fnSayHello()
+	PROTECTED Function fnSayHello()
 		=Messagebox("Hello")
 	endfunc
 
@@ -48,6 +48,23 @@ Define Class kaVfpRocksCstSub as "kaVfpRocksCst"
 
 
 ENDDEFINE 
+
+Function fnStaticFunctionA
+
+endfuc
+
+Funct fnStaticFunctionB
+
+Procedure StaticProcedureA
+endproc
+
+HIDDEN Function fnStaticFunctionHidden
+endfuc
+
+PROTECTED Funct StaticProcedureProtected
+
+Procedure StaticProcedureB
+
 ```
 
 ![function list panel](sample.png)

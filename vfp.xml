@@ -16,7 +16,7 @@
 					<nameExpr expr="[\w]+" />
 				</className>
 				
-				<function mainExpr="(?m)^[\t ]*(?i:DEFINE\s+CLASS[^\r\n]*|(?:PROC|FUNC)\w*[\t ]+['&quot;]?[\w]+['&quot;]?)">
+				<function mainExpr="(?mi)^[\t ]*(?:DEFINE\s+CLASS[^\r\n]*|(?:(?:PROTECTED|HIDDEN)[\t ]+)?(?:STATIC[\t ]+)?(?:PROCEDURE|PROC|FUNCTION|FUNC)[\t ]+['&quot;]?[A-Za-z_]\w*['&quot;]?)">
 					<functionName>
 						<funcNameExpr expr="(?i:^[\t ]*DEFINE\s+CLASS\s+)\K.*|(?i:(?:PROC|FUNC)\w*[\t ]+)\K['&quot;]?[\w]+['&quot;]?"/>
 						<!-- FIX: ':' und '\' (sowie '/' und '.') erlauben -->
