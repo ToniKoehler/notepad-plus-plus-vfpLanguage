@@ -11,7 +11,7 @@ Description: text syntax highlighting.
 Description: display the classes and functions/procedures in Function List panel.
 
 * first you must import the user defined language
-* to use the Function List panel with VFP you must copy the vfp.xml and overrideMap.xml in your notepad++ directory on your userprofile.<br>Path: c:\users\username\appdata\roaming\notepad++\functionList\*.xml<br>
+* to use the Function List panel with VFP you must copy the vfp.xml and overrideMap.xml in your notepad++ directory on your userprofile.<br>Path: c:\users\username\appdata\roaming\notepad++\functionList\\*.xml<br>
 If the folder "functionList" not exists -> create it.
 
 ## Functionality
